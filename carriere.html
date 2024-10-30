@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-carriere.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ismael LAKEHAL</title>
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const splide = new Splide('.splide', {
+                fixedWidth: '30rem',
+                fixedHeight: '30rem',
+                start: 3,
+                perPage: 2,
+                gap: '30px',
+                type: 'loop',
+                drag: 'free',
+                focus: 'center',
+                perPage: 3,
+                autoplay: true,
+                interval: 3000,
+                breakpoints: {
+                    500: {
+                        Perpage: 2
+                    },
+                    400: {
+                        Perpage: 1
+                    }
+                }
+
+            });
+            splide.mount();
+        });
+    </script>
+    <header>
+        <nav>
+            <h1>Ismael LAKEHAL</h1>
+            <ul class="menu">
+
+                <li><a href="index.html" class="menu">Accueil</a></li>
+                <li><a href="carriere.html" class="menu">Carrière</a></li>
+                <li><a href="recompense.html" class="menu">Récompenses</a></li>
+                <li><a href="contact.html" class="menu">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    </div>
+
+    <section class="splide" aria-labelledby="carousel-heading">
+
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="image/orevero.jpg" alt="affiche de cinéma" class="image-item"></li>
+                <li class="splide__slide"><img src="image/backstage.jpg" alt="affiche de cinéma" class="image-item">
+                </li>
+                <li class="splide__slide"><img src="image/mon_destin.jpg" alt="affiche de cinéma" class="image-item">
+                </li>
+                <li class="splide__slide"><img src="image/coulisse.jpg" alt="affiche de cinéma" class="image-item"></li>
+                <li class="splide__slide"><img src="image/bacle.jpg" alt="affiche de cinéma" class="image-item"></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>ABcréation copyright <i class="fa-regular fa-copyright"></i></p>
+    </footer>
+
+</body>
+
+</html>
