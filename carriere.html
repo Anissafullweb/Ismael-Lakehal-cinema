@@ -23,26 +23,35 @@
                 fixedWidth: '30rem',
                 fixedHeight: '30rem',
                 start: 3,
-                perPage: 2,
+                perPage: 3,  // Corrigé : 'perPage' doit être cohérent avec la taille des diapositives
                 gap: '30px',
                 type: 'loop',
                 drag: 'free',
                 focus: 'center',
-                perPage: 3,
                 autoplay: true,
-                interval: 3000,
+                interval: 3000,  // Intervalle pour l'autoplay (en ms)
+                pauseOnHover: true,  // Met l'autoplay en pause lorsque la souris passe sur le carrousel
+                resetProgress: false,  // Désactive la réinitialisation de la barre de progression
                 breakpoints: {
                     500: {
-                        Perpage: 2
+                        perPage: 2  // Corrigé : 'Perpage' -> 'perPage'
                     },
                     400: {
-                        Perpage: 1
+                        perPage: 1  // Corrigé : 'Perpage' -> 'perPage'
                     }
-                }
-
+                },
+                easing: 'ease-in-out',  // Effet de transition fluide entre les diapositives
+                speed: 1000  // Durée de la transition fluide (en ms)
             });
+
+            // Ajouter l'animation fluide à l'autoplay
+            splide.on('autoplay', function () {
+                splide.go('>');
+            });
+
             splide.mount();
         });
+
     </script>
     <header>
         <nav>
