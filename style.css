@@ -109,38 +109,9 @@ a {
     animation: apparition 0.8s 0.6s ease-out forwards;
 }
 
-.hero-link {
-    width: 100%;
-    padding: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.hero-link li {
-    font-size: 15px;
-    padding: 10px;
-    color: whitesmoke;
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: apparition 0.8s 0.6s ease-out forwards;
-}
-
-
-.fa {
-    padding: 10px;
-}
-
-.hero-link li a:hover {
-    color: #45d0e4;
-}
-
 /* Footer */
 footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+
     background-color: black;
     width: 100%;
     height: 4.5%;
@@ -168,6 +139,24 @@ footer p {
     animation: apparition 0.8s 0.2s ease-out forwards;
 }
 
+.hero-link li {
+    font-size: 15px;
+    padding: 10px;
+    color: whitesmoke;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.8s 0.6s ease-out forwards;
+}
+
+
+.fa {
+    padding: 10px;
+}
+
+.hero-link li a:hover {
+    color: #45d0e4;
+}
+
 /* Animation d'apparition */
 @keyframes apparition {
     100% {
@@ -180,34 +169,30 @@ footer p {
 
 /* Pour les petits écrans (mobile, largeur moins de 500px) */
 @media (max-width: 500px) {
-    nav {
+    header {
+        height: 15%;
+    }
+
+    .hero {
+        width: auto;
+        object-fit: scale-down;
+        background-size: cover;
+        background-position: 70%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .hero-link {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    .menu {
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .menu li a {
-        font-size: 12px;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .hero p {
-        font-size: 30px;
-        padding: 100px 0px 0px 50px;
-    }
-
-    footer p {
-        font-size: 14px;
-        padding-top: 10px;
+        justify-content: center;
     }
 }
 
