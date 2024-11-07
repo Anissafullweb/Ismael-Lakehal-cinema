@@ -85,9 +85,8 @@ a {
 /* Section Hero (Image d'accueil) */
 .hero {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
     background-image: url(image/Photo_de_profil.jpg);
     object-fit: cover;
     width: 100%;
@@ -101,10 +100,8 @@ a {
 }
 
 .hero p {
-
+    padding-left: 280px;
     background-color: transparent;
-
-    font-size: 40px;
     color: white;
     margin: 0px;
     opacity: 0;
@@ -234,7 +231,6 @@ footer p {
 @media (min-width: 1024px) {
     .hero p {
         font-size: 50px;
-        padding: 150px 0px 0px 150px;
     }
 
     .menu li a {
