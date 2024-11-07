@@ -119,11 +119,21 @@ a {
 }
 
 .hero-link li {
+    font-size: 15px;
     padding: 10px;
     color: whitesmoke;
     opacity: 0;
     transform: translateY(-30px);
     animation: apparition 0.8s 0.6s ease-out forwards;
+}
+
+
+.fa {
+    padding: 10px;
+}
+
+.hero-link li a:hover {
+    color: #45d0e4;
 }
 
 /* Footer */
