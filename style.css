@@ -128,11 +128,12 @@ a:hover {
 
 .hero p a {
     font-weight: bolder;
-    color: #000000;
+    color: #ffffff;
     display: block;
-    font-size: 30px;
+    font-size: 40px;
     width: 100%;
     padding-left: 10%;
+
 }
 
 .hero p a:hover {
@@ -144,7 +145,7 @@ footer {
 
     background-color: black;
     width: 100%;
- 
+
     color: white;
     opacity: 0;
     transform: translateY(-30px);
@@ -239,7 +240,7 @@ footer p {
         justify-content: center;
     }
 
-    footer  {
+    footer {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -247,9 +248,9 @@ footer p {
         height: auto;
     }
 
-.social-media{
-    display: none;
-}
+    .social-media {
+        display: none;
+    }
 }
 
 /* Pour les tablettes (de 500px à 768px) */
