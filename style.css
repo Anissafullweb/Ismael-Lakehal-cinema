@@ -18,6 +18,7 @@ body {
 
 header {
     background-color: black;
+    height: 11vh;
 }
 
 nav {
@@ -212,7 +213,15 @@ footer p {
 /* Pour les petits écrans (mobile, largeur moins de 500px) */
 @media (max-width: 500px) {
     header {
-        height: 25%;
+        height: 15%;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 45px;
     }
 
     .hero {
