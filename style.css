@@ -254,7 +254,6 @@ footer p {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: auto;
     }
 
     .social-media {
