@@ -169,7 +169,7 @@ footer p {
         align-items: center;
         justify-content: center;
         height: 10%;
-        padding: 0%;
+
 
     }
 
@@ -200,6 +200,11 @@ footer p {
         flex-direction: row;
         align-items: flex-start;
         justify-content: center;
+    }
+
+    .hero-link li {
+        padding: 10px;
+        margin: auto;
     }
 
     footer {
